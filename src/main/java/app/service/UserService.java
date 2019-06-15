@@ -1,6 +1,6 @@
 package app.service;
 
-import app.model.User;
+import app.domain.User;
 
 import java.util.Optional;
 

@@ -4906,6 +4906,11 @@ vue@^2.6.10:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
+vuetify-audio@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/vuetify-audio/-/vuetify-audio-0.0.8.tgz#3c8b00e0c16630f47a4916449355255ed996ed02"
+  integrity sha1-PIsA4MFmMPR6SRZEk1UlXtmW7QI=
+
 vuetify@^1.5.14:
   version "1.5.14"
   resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.14.tgz#ff67d0b8a398be5297da159b6cd1b31f4d2898b8"

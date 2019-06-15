@@ -1,4 +1,4 @@
-package app.model;
+package app.domain;
 
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * @author Alvin
@@ -14,7 +15,7 @@ import javax.persistence.Id;
 @Data
 @Entity
 @Document(collection = "track")
-public class Track {
+public class Track implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;

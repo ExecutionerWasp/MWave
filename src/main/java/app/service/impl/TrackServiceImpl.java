@@ -1,6 +1,6 @@
 package app.service.impl;
 
-import app.model.Track;
+import app.domain.Track;
 import app.repos.TrackRepos;
 import app.service.TrackService;
 import lombok.NonNull;
@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
 
 /**
  * @author Alvin

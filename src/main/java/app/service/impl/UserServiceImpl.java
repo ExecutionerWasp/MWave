@@ -1,6 +1,6 @@
 package app.service.impl;
 
-import app.model.User;
+import app.domain.User;
 import app.repos.UserRepos;
 import app.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

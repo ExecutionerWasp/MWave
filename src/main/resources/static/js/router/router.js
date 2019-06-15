@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import TrackList from '../views/TrackList.vue'
+import WelcomePage from '../views/WelcomePage.vue';
 
 Vue.use(VueRouter)
 
 const routes = [
-    {path: '/', component: TrackList},
-    {path: '*', component: TrackList}
+    {path: '/', component: WelcomePage},
+    {path: '*', component: WelcomePage}
 ]
 
 export default new VueRouter({

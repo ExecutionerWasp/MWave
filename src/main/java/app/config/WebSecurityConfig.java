@@ -1,6 +1,6 @@
 package app.config;
 
-import app.model.User;
+import app.domain.User;
 import app.service.UserService;
 import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.PrincipalExtractor;

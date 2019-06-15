@@ -1,6 +1,6 @@
 package app.controller;
 
-import app.model.Track;
+import app.domain.Track;
 import app.service.TrackService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

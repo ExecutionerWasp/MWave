@@ -1,21 +1,20 @@
-package app.model;
+package app.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * @author Alvin
  **/
 @Entity
-@Document(collection = "usr")
+@Document(collection = "user")
 @Data
 @NoArgsConstructor
 public class User implements Serializable {
@@ -30,4 +29,8 @@ public class User implements Serializable {
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime lastVisit;
+
+    @JoinColumn(name = "playlist_id")
+    @OneToMany(fetch = FetchType.EAGER)
+    private List<Playlist> playlists;
 }
